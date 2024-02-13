@@ -1,0 +1,13 @@
+services:
+  imc-front:
+    image: chillo.tech/imc-front:1.0.1
+    container_name: imc-front
+    restart: always
+    ports:
+      - 81:80
+    networks:
+      - imc-network
+networks:
+  imc-network:
+    external: true
+    name: imc-network

@@ -1,0 +1,9 @@
+on:
+  push:
+
+jobs:
+  dockerize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "debut du script"
